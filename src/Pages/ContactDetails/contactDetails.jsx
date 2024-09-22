@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Link,useParams} from "react-router-dom";
 //import contacts from '/Users/ajoy/Assignments/Data Taskers/frontend/src/data/contact.json'
 import axios from "axios"
-import profile from '/Users/ajoy/Assignments/Data Taskers/frontend/src/Images/profile.png'
+import profile from './Images/profile.png'
 
 function ContactDetails() {
 
