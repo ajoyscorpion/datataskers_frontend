@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Link,useParams} from "react-router-dom";
 //import contacts from '/Users/ajoy/Assignments/Data Taskers/frontend/src/data/contact.json'
 import axios from "axios"
-import profile from './Images/profile.png'
+//import profile from './src/Images/profile.png'
 
 function ContactDetails() {
 
@@ -44,7 +44,7 @@ function ContactDetails() {
 
                   {/* image */}
                   <div className='d-none d-lg-block'>
-                    <img src={profile} alt="profile" style={{width:"200px"}} />
+                    <img src='/Images/profile.png' alt="profile" style={{width:"200px"}} />
                   </div>
                 </div>
 
