@@ -31,7 +31,7 @@ function SendMessage() {
         }
         console.log(data);
         try {
-            const response = await axios.post(`http://localhost:4000/sendMessage`,data)
+            const response = await axios.post(`https://datataskers-backend.onrender.com/sendMessage`,data)
             console.log(response);   
         } catch (error) {
             console.error("Failed to send the message");
@@ -41,7 +41,7 @@ function SendMessage() {
     useEffect(() => {
         const fetchContact = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/contact/${id}`)
+                const response = await axios.get(`https://datataskers-backend.onrender.com/contact/${id}`)
                 setContact(response.data)
             } catch (error) {
                 console.error('Error fetching contacts:', error);

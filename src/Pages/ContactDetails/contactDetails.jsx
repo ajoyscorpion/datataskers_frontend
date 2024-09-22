@@ -12,11 +12,11 @@ function ContactDetails() {
   const {id} = useParams()
 
   useEffect(() => {
-    
+
     // Get the mentioned contact
     const fetchContact = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/contact/${id}`)
+        const response = await axios.get(`https://datataskers-backend.onrender.com/contact/${id}`)
         setContact(response.data)
       } catch (error) {
         console.error('Error fetching contacts:', error);

@@ -13,7 +13,7 @@ function ContactList() {
     // Fetch all contact list
     const fetchContacts = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/allContacts');
+        const response = await axios.get('https://datataskers-backend.onrender.com/allContacts');
         setContacts(response.data);
       } catch (error) {
         console.error('Error fetching contacts:', error);

@@ -10,7 +10,7 @@ function AllMessages() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://localhost:4000/allMessages")
+                const response = await axios.get("https://datataskers-backend.onrender.com/allMessages")
                 setMessages(response.data)
                 console.log(response.data);
             } catch (error) {
